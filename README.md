@@ -25,14 +25,14 @@
 
 É uma forma de expandir o aprendizado sobre LocalStorage, armazenando dados na própria memória do browser, tendo uma simulação direta e fácil com uma aplicação de cadastro de despesas.
 
-Projeto desenvolvido a partir de um vídeo oferecido pelo professor Fernando Leonid do curso da Udemy Desenvolvimento Web Completo 2022.
+Projeto desenvolvido a partir de um vídeo oferecido pelo professor Jorge Santana do curso da Udemy Desenvolvimento Web Completo 2022.
 
 ---
 
 ## ⚙️ Funcionalidades
 
 - [x] Layout da aplicação
-- [ ] Cadastro de Despesas
+- [x] Cadastro de Despesas
 - [ ] Validação dos dados antes de ser registrado
 - [ ] Listagem das despesas
 - [ ] Filtragem das despesas
