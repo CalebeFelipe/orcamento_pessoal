@@ -33,7 +33,7 @@ Projeto desenvolvido a partir de um vídeo oferecido pelo professor Jorge Santan
 
 - [x] Layout da aplicação
 - [x] Cadastro de Despesas
-- [ ] Validação dos dados antes de ser registrado
+- [x] Validação dos dados antes de ser registrado
 - [ ] Listagem das despesas
 - [ ] Filtragem das despesas
 - [ ] Removendo despesas
@@ -50,6 +50,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)**
 -   **[CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)**
 -   **[JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**   
+-   **[JQuery](https://jquery.com/)**
+-   **[Bootstrap](https://getbootstrap.com/)**
 
 #### **Utilitários**
 
