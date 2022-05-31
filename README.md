@@ -34,7 +34,7 @@ Projeto desenvolvido a partir de um vídeo oferecido pelo professor Jorge Santan
 - [x] Layout da aplicação
 - [x] Cadastro de Despesas
 - [x] Validação dos dados antes de ser registrado
-- [ ] Listagem das despesas
+- [x] Listagem das despesas
 - [ ] Filtragem das despesas
 - [ ] Removendo despesas
 
