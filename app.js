@@ -63,6 +63,38 @@ class Bd {
 
         return despesas
     }
+
+    pesquisar(despesa){
+        let despesasFiltradas = []
+        despesasFiltradas = this.recuperarTodosRegistros()
+
+        //ano
+        if(despesa.ano != '') {
+            despesasFiltradas = despesasFiltradas.filter((d) => d.ano == despesa.ano)
+        }
+        //mes
+        if(despesa.mes != '') {
+            despesasFiltradas = despesasFiltradas.filter((d) => d.mes == despesa.mes)
+        }
+        //dia
+        if(despesa.dia != '') {
+            despesasFiltradas = despesasFiltradas.filter((d) => d.dia == despesa.dia)
+        }
+        //tipo
+        if(despesa.tipo != '') {
+            despesasFiltradas = despesasFiltradas.filter((d) => d.tipo == despesa.tipo)
+        }
+        //descricao
+        if(despesa.descricao != '') {
+            despesasFiltradas = despesasFiltradas.filter((d) => d.descricao == despesa.descricao)
+        }
+        //valor
+        if(despesa.valor != '') {
+            despesasFiltradas = despesasFiltradas.filter((d) => d.valor == despesa.valor)
+        }
+
+        return despesasFiltradas
+    }
 }
 
 let bd = new Bd()
@@ -115,13 +147,14 @@ const cadastrarDespesa = () => {
     }
 }
 
-const carregaListaDespesa = () => {
-    let despesas = []
-    despesas = bd.recuperarTodosRegistros()
+const carregaListaDespesa = (despesas = Array(), filtro = false) => {
 
-    console.log(despesas)
-
+    if(despesas.length == 0 && filtro == false) {
+        despesas = bd.recuperarTodosRegistros()
+    }
+    
     let listaDespesas = document.getElementById('listaDespesas')
+    listaDespesas.innerHTML = ''
 
     despesas.forEach(function(d){
         //criando a linha (tr)
@@ -151,3 +184,18 @@ const carregaListaDespesa = () => {
     })
 }
 
+
+const pesquisarDespesas = () => {
+    let ano = document.getElementById('ano').value
+    let mes = document.getElementById('mes').value
+    let dia = document.getElementById('dia').value
+    let tipo = document.getElementById('tipo').value
+    let descricao = document.getElementById('descricao').value
+    let valor = document.getElementById('valor').value
+
+    const despesa = new Despesa(ano, mes, dia, tipo, descricao, valor)
+
+    let despesas = bd.pesquisar(despesa)
+
+    carregaListaDespesa(despesas, true)
+}
