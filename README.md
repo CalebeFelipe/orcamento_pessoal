@@ -36,7 +36,7 @@ Projeto desenvolvido a partir de um vídeo oferecido pelo professor Jorge Santan
 - [x] Validação dos dados antes de ser registrado
 - [x] Listagem das despesas
 - [x] Filtragem das despesas
-- [ ] Removendo despesas
+- [x] Removendo despesas
 
 
 ---
